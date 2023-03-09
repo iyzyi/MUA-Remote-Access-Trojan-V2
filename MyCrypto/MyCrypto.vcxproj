@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e9d0e4d8-2818-4b7e-b203-d074f7c71f0d}</ProjectGuid>
+    <RootNamespace>MyCrypto</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../$(Platform)\Output\$(Configuration)\</OutDir>
+    <IntDir>../$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../$(Platform)\Output\$(Configuration)\</OutDir>
+    <IntDir>../$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>../$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir>../$(Platform)\Output\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>../$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir>../$(Platform)\Output\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\3way.h" />
+    <ClInclude Include="Include\adler32.h" />
+    <ClInclude Include="Include\adv_simd.h" />
+    <ClInclude Include="Include\aes.h" />
+    <ClInclude Include="Include\aes_armv4.h" />
+    <ClInclude Include="Include\algebra.h" />
+    <ClInclude Include="Include\algparam.h" />
+    <ClInclude Include="Include\allocate.h" />
+    <ClInclude Include="Include\arc4.h" />
+    <ClInclude Include="Include\argnames.h" />
+    <ClInclude Include="Include\aria.h" />
+    <ClInclude Include="Include\arm_simd.h" />
+    <ClInclude Include="Include\asn.h" />
+    <ClInclude Include="Include\authenc.h" />
+    <ClInclude Include="Include\base32.h" />
+    <ClInclude Include="Include\base64.h" />
+    <ClInclude Include="Include\basecode.h" />
+    <ClInclude Include="Include\bench.h" />
+    <ClInclude Include="Include\blake2.h" />
+    <ClInclude Include="Include\blowfish.h" />
+    <ClInclude Include="Include\blumshub.h" />
+    <ClInclude Include="Include\camellia.h" />
+    <ClInclude Include="Include\cast.h" />
+    <ClInclude Include="Include\cbcmac.h" />
+    <ClInclude Include="Include\ccm.h" />
+    <ClInclude Include="Include\chacha.h" />
+    <ClInclude Include="Include\chachapoly.h" />
+    <ClInclude Include="Include\cham.h" />
+    <ClInclude Include="Include\channels.h" />
+    <ClInclude Include="Include\cmac.h" />
+    <ClInclude Include="Include\config.h" />
+    <ClInclude Include="Include\config_align.h" />
+    <ClInclude Include="Include\config_asm.h" />
+    <ClInclude Include="Include\config_cpu.h" />
+    <ClInclude Include="Include\config_cxx.h" />
+    <ClInclude Include="Include\config_dll.h" />
+    <ClInclude Include="Include\config_int.h" />
+    <ClInclude Include="Include\config_misc.h" />
+    <ClInclude Include="Include\config_ns.h" />
+    <ClInclude Include="Include\config_os.h" />
+    <ClInclude Include="Include\config_ver.h" />
+    <ClInclude Include="Include\cpu.h" />
+    <ClInclude Include="Include\crc.h" />
+    <ClInclude Include="Include\cryptlib.h" />
+    <ClInclude Include="Include\darn.h" />
+    <ClInclude Include="Include\default.h" />
+    <ClInclude Include="Include\des.h" />
+    <ClInclude Include="Include\dh.h" />
+    <ClInclude Include="Include\dh2.h" />
+    <ClInclude Include="Include\dll.h" />
+    <ClInclude Include="Include\dmac.h" />
+    <ClInclude Include="Include\donna.h" />
+    <ClInclude Include="Include\donna_32.h" />
+    <ClInclude Include="Include\donna_64.h" />
+    <ClInclude Include="Include\donna_sse.h" />
+    <ClInclude Include="Include\drbg.h" />
+    <ClInclude Include="Include\dsa.h" />
+    <ClInclude Include="Include\eax.h" />
+    <ClInclude Include="Include\ec2n.h" />
+    <ClInclude Include="Include\eccrypto.h" />
+    <ClInclude Include="Include\ecp.h" />
+    <ClInclude Include="Include\ecpoint.h" />
+    <ClInclude Include="Include\elgamal.h" />
+    <ClInclude Include="Include\emsa2.h" />
+    <ClInclude Include="Include\eprecomp.h" />
+    <ClInclude Include="Include\esign.h" />
+    <ClInclude Include="Include\factory.h" />
+    <ClInclude Include="Include\fhmqv.h" />
+    <ClInclude Include="Include\files.h" />
+    <ClInclude Include="Include\filters.h" />
+    <ClInclude Include="Include\fips140.h" />
+    <ClInclude Include="Include\fltrimpl.h" />
+    <ClInclude Include="Include\gcm.h" />
+    <ClInclude Include="Include\gf256.h" />
+    <ClInclude Include="Include\gf2n.h" />
+    <ClInclude Include="Include\gf2_32.h" />
+    <ClInclude Include="Include\gfpcrypt.h" />
+    <ClInclude Include="Include\gost.h" />
+    <ClInclude Include="Include\gzip.h" />
+    <ClInclude Include="Include\hashfwd.h" />
+    <ClInclude Include="Include\hc128.h" />
+    <ClInclude Include="Include\hc256.h" />
+    <ClInclude Include="Include\hex.h" />
+    <ClInclude Include="Include\hight.h" />
+    <ClInclude Include="Include\hkdf.h" />
+    <ClInclude Include="Include\hmac.h" />
+    <ClInclude Include="Include\hmqv.h" />
+    <ClInclude Include="Include\hrtimer.h" />
+    <ClInclude Include="Include\ida.h" />
+    <ClInclude Include="Include\idea.h" />
+    <ClInclude Include="Include\integer.h" />
+    <ClInclude Include="Include\iterhash.h" />
+    <ClInclude Include="Include\kalyna.h" />
+    <ClInclude Include="Include\keccak.h" />
+    <ClInclude Include="Include\lea.h" />
+    <ClInclude Include="Include\lsh.h" />
+    <ClInclude Include="Include\lubyrack.h" />
+    <ClInclude Include="Include\luc.h" />
+    <ClInclude Include="Include\mars.h" />
+    <ClInclude Include="Include\md2.h" />
+    <ClInclude Include="Include\md4.h" />
+    <ClInclude Include="Include\md5.h" />
+    <ClInclude Include="Include\mdc.h" />
+    <ClInclude Include="Include\mersenne.h" />
+    <ClInclude Include="Include\misc.h" />
+    <ClInclude Include="Include\modarith.h" />
+    <ClInclude Include="Include\modes.h" />
+    <ClInclude Include="Include\modexppc.h" />
+    <ClInclude Include="Include\mqueue.h" />
+    <ClInclude Include="Include\mqv.h" />
+    <ClInclude Include="Include\naclite.h" />
+    <ClInclude Include="Include\nbtheory.h" />
+    <ClInclude Include="Include\nr.h" />
+    <ClInclude Include="Include\oaep.h" />
+    <ClInclude Include="Include\oids.h" />
+    <ClInclude Include="Include\osrng.h" />
+    <ClInclude Include="Include\ossig.h" />
+    <ClInclude Include="Include\padlkrng.h" />
+    <ClInclude Include="Include\panama.h" />
+    <ClInclude Include="Include\pch.h" />
+    <ClInclude Include="Include\pkcspad.h" />
+    <ClInclude Include="Include\poly1305.h" />
+    <ClInclude Include="Include\polynomi.h" />
+    <ClInclude Include="Include\ppc_simd.h" />
+    <ClInclude Include="Include\pssr.h" />
+    <ClInclude Include="Include\pubkey.h" />
+    <ClInclude Include="Include\pwdbased.h" />
+    <ClInclude Include="Include\queue.h" />
+    <ClInclude Include="Include\rabbit.h" />
+    <ClInclude Include="Include\rabin.h" />
+    <ClInclude Include="Include\randpool.h" />
+    <ClInclude Include="Include\rc2.h" />
+    <ClInclude Include="Include\rc5.h" />
+    <ClInclude Include="Include\rc6.h" />
+    <ClInclude Include="Include\rdrand.h" />
+    <ClInclude Include="Include\resource.h" />
+    <ClInclude Include="Include\rijndael.h" />
+    <ClInclude Include="Include\ripemd.h" />
+    <ClInclude Include="Include\rng.h" />
+    <ClInclude Include="Include\rsa.h" />
+    <ClInclude Include="Include\rw.h" />
+    <ClInclude Include="Include\safer.h" />
+    <ClInclude Include="Include\salsa.h" />
+    <ClInclude Include="Include\scrypt.h" />
+    <ClInclude Include="Include\seal.h" />
+    <ClInclude Include="Include\secblock.h" />
+    <ClInclude Include="Include\secblockfwd.h" />
+    <ClInclude Include="Include\seckey.h" />
+    <ClInclude Include="Include\seed.h" />
+    <ClInclude Include="Include\serpent.h" />
+    <ClInclude Include="Include\serpentp.h" />
+    <ClInclude Include="Include\sha.h" />
+    <ClInclude Include="Include\sha1_armv4.h" />
+    <ClInclude Include="Include\sha256_armv4.h" />
+    <ClInclude Include="Include\sha3.h" />
+    <ClInclude Include="Include\sha512_armv4.h" />
+    <ClInclude Include="Include\shacal2.h" />
+    <ClInclude Include="Include\shake.h" />
+    <ClInclude Include="Include\shark.h" />
+    <ClInclude Include="Include\simeck.h" />
+    <ClInclude Include="Include\simon.h" />
+    <ClInclude Include="Include\simple.h" />
+    <ClInclude Include="Include\siphash.h" />
+    <ClInclude Include="Include\skipjack.h" />
+    <ClInclude Include="Include\sm3.h" />
+    <ClInclude Include="Include\sm4.h" />
+    <ClInclude Include="Include\smartptr.h" />
+    <ClInclude Include="Include\sosemanuk.h" />
+    <ClInclude Include="Include\speck.h" />
+    <ClInclude Include="Include\square.h" />
+    <ClInclude Include="Include\stdcpp.h" />
+    <ClInclude Include="Include\strciphr.h" />
+    <ClInclude Include="Include\tea.h" />
+    <ClInclude Include="Include\threefish.h" />
+    <ClInclude Include="Include\tiger.h" />
+    <ClInclude Include="Include\trap.h" />
+    <ClInclude Include="Include\trunhash.h" />
+    <ClInclude Include="Include\ttmac.h" />
+    <ClInclude Include="Include\tweetnacl.h" />
+    <ClInclude Include="Include\twofish.h" />
+    <ClInclude Include="Include\validate.h" />
+    <ClInclude Include="Include\vmac.h" />
+    <ClInclude Include="Include\wake.h" />
+    <ClInclude Include="Include\whrlpool.h" />
+    <ClInclude Include="Include\words.h" />
+    <ClInclude Include="Include\xed25519.h" />
+    <ClInclude Include="Include\xtr.h" />
+    <ClInclude Include="Include\xtrcrypt.h" />
+    <ClInclude Include="Include\xts.h" />
+    <ClInclude Include="Include\zdeflate.h" />
+    <ClInclude Include="Include\zinflate.h" />
+    <ClInclude Include="Include\zlib.h" />
+    <ClInclude Include="Misc.h" />
+    <ClInclude Include="MyCrypto.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="AsymmetricCrypto.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Misc.cpp" />
+    <ClCompile Include="MyCrypto.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="AsymmetricCrypto.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

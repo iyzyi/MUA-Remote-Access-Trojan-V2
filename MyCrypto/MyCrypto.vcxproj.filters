@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Include">
+      <UniqueIdentifier>{f3042730-5298-4b47-8a55-eb4eb27a5f99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCrypto.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\arm_simd.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\asn.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\authenc.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\base32.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\base64.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\basecode.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\bench.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\blake2.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\blowfish.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\blumshub.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\camellia.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cast.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cbcmac.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ccm.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\chacha.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\chachapoly.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cham.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\channels.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cmac.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\config.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\config_align.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\config_asm.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\config_cpu.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\config_cxx.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\config_dll.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\config_int.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\config_misc.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\config_ns.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\config_os.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\config_ver.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cpu.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\crc.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\cryptlib.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\darn.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\default.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\des.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\dh.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\dh2.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\dll.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\dmac.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\donna.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\donna_32.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\donna_64.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\donna_sse.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\drbg.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\dsa.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\eax.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ec2n.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\eccrypto.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ecp.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ecpoint.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\elgamal.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\emsa2.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\eprecomp.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\esign.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\factory.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\fhmqv.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\files.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\filters.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\fips140.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\fltrimpl.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gcm.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gf2_32.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gf2n.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gf256.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gfpcrypt.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gost.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\gzip.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\hashfwd.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\hc128.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\hc256.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\hex.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\hight.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\hkdf.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\hmac.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\hmqv.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\hrtimer.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ida.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\idea.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\integer.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iterhash.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kalyna.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\keccak.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\lea.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\lsh.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\lubyrack.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\luc.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mars.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\md2.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\md4.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\md5.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mdc.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mersenne.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\misc.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\modarith.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\modes.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\modexppc.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mqueue.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mqv.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\naclite.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\nbtheory.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\nr.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\oaep.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\oids.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\osrng.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ossig.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\padlkrng.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\panama.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pch.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pkcspad.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\poly1305.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\polynomi.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ppc_simd.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pssr.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pubkey.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pwdbased.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\queue.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\rabbit.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\rabin.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\randpool.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\rc2.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\rc5.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\rc6.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\rdrand.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\resource.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\rijndael.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ripemd.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\rng.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\rsa.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\rw.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\safer.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\salsa.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\scrypt.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\seal.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\secblock.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\secblockfwd.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\seckey.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\seed.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\serpent.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\serpentp.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\sha.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\sha1_armv4.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\sha3.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\sha256_armv4.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\sha512_armv4.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\shacal2.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\shake.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\shark.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\simeck.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\simon.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\simple.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\siphash.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\skipjack.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\sm3.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\sm4.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\smartptr.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\sosemanuk.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\speck.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\square.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\stdcpp.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\strciphr.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\tea.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\threefish.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\tiger.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\trap.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\trunhash.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ttmac.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\tweetnacl.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\twofish.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\validate.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\vmac.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\wake.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\whrlpool.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\words.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\xed25519.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\xtr.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\xtrcrypt.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\xts.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\zdeflate.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\zinflate.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\zlib.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\3way.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\adler32.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\adv_simd.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\aes.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\aes_armv4.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\algebra.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\algparam.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\allocate.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\arc4.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\argnames.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\aria.h">
+      <Filter>头文件\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Misc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AsymmetricCrypto.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MyCrypto.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Misc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AsymmetricCrypto.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
